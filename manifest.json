@@ -1,0 +1,17 @@
+{
+    "name": "Soccer News",
+    "short_name": "Soccer News",
+    "description": "Soccer News",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#00897B",
+    "theme_color": "#00897B",
+    "gcm_sender_id": "489407451958",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

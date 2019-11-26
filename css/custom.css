@@ -1,0 +1,100 @@
+.loading{
+    z-index: 10; 
+    background-color: white;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    bottom: 0px;
+    right: 0px;
+}
+
+.splash-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.loading-c{
+    height: 15px;
+    width: 15px;
+    background: gray;
+    display: inline-block;
+    margin-left:10px;
+}
+
+.loading > div{
+    margin: auto;
+    width: 200px;
+    padding: 10px;
+    margin-top:35vh;
+    text-align: center;
+}
+
+.loading-c:nth-child(1){
+    -webkit-animation-name: colorChange; 
+    -webkit-animation-duration: 4s; 
+    -webkit-animation-iteration-count: infinite; 
+}
+.loading-c:nth-child(2){
+    -webkit-animation-name: colorChange1; 
+    -webkit-animation-duration: 4s; 
+    -webkit-animation-iteration-count: infinite; 
+}
+.loading-c:nth-child(3){
+    -webkit-animation-name: colorChange2; 
+    -webkit-animation-duration: 4s; 
+    -webkit-animation-iteration-count: infinite; 
+}
+
+@-webkit-keyframes colorChange {
+    0% {background-color:#2E7D32;}
+    25% {background-color:#558B2F;}
+    50% {background-color:#9E9D24;}
+    75% {background-color:#F9A825;}
+    100% {background-color:#2E7D32;}
+}
+  
+@keyframes colorChange {
+    0% {background-color:#2E7D32;}
+    25% {background-color:#558B2F;}
+    50% {background-color:#9E9D24;}
+    75% {background-color:#F9A825;}
+    100% {background-color:#2E7D32;}
+}
+
+@-webkit-keyframes colorChange1 {
+    0% {background-color:#558B2F;}
+    25% {background-color:#9E9D24;}
+    50% {background-color:#F9A825;}
+    75% {background-color:#2E7D32;}
+    100% {background-color:#558B2F;}
+}
+  
+@keyframes colorChange1 {
+    0% {background-color:#558B2F;}
+    25% {background-color:#9E9D24;}
+    50% {background-color:#F9A825;}
+    75% {background-color:#2E7D32;}
+    100% {background-color:#558B2F;}
+}
+
+@-webkit-keyframes colorChange2 {
+    0% {background-color:#9E9D24;}
+    25% {background-color:#F9A825;}
+    50% {background-color:#2E7D32;}
+    75% {background-color:#558B2F;}
+    100% {background-color:#9E9D24;}
+}
+  
+@keyframes colorChange2 {
+    0% {background-color:#9E9D24;}
+    25% {background-color:#F9A825;}
+    50% {background-color:#2E7D32;}
+    75% {background-color:#558B2F;}
+    100% {background-color:#9E9D24;}
+}
+
+.container-character{
+    text-align: center;
+}
