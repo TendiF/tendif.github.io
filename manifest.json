@@ -2,7 +2,7 @@
     "name": "Soccer News",
     "short_name": "Soccer News",
     "description": "Soccer News",
-    "start_url": "/index.html",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "#00897B",
     "theme_color": "#00897B",
