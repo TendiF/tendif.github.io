@@ -1,5 +1,5 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
-const CACHE_NAME = "firstpwa1.7";
+const CACHE_NAME = "firstpwa1.8";
 var urlsToCache = [
     "icon.png",
     "assets/image/shandy.png",
@@ -23,9 +23,9 @@ var urlsToCache = [
   
 workbox.precaching.precacheAndRoute(urlsToCache);
 
-workbox.routing.registerRoute(
-    'https://api.football-data.org/',
-    workbox.strategies.staleWhileRevalidate({
+workbox.routing.staleWhileRevalidate(
+    new RegExp('https://api.football-data.org/'),
+    workbox.strategies.cacheFirst({
         cacheName : CACHE_NAME,
     })
 );
