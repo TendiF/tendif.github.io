@@ -23,9 +23,9 @@ var urlsToCache = [
   
 workbox.precaching.precacheAndRoute(urlsToCache);
 
-workbox.routing.staleWhileRevalidate(
+workbox.routing.registerRoute(
     new RegExp('https://api.football-data.org/'),
-    workbox.strategies.cacheFirst({
+    workbox.strategies.staleWhileRevalidate({
         cacheName : CACHE_NAME,
     })
 );
