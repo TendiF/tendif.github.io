@@ -38,6 +38,11 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
+    new RegExp('/article.html'),
+    workbox.strategies.staleWhileRevalidate()
+);
+
+workbox.routing.registerRoute(
     /\.(?:png|gif|jpg|jpeg|svg)$/,
     workbox.strategies.cacheFirst({
         cacheName : 'images',
