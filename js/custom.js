@@ -14,7 +14,7 @@ function addFavorite(data = {}){
             console.log('id tidak boleh kosong')
             return tx.complete
         }
-        store.add(data); //menambahkan key "buku"
+        store.put(data); //menambahkan key "buku"
         return tx.complete;
     })
 }
