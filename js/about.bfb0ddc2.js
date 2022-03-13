@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkportal_mi"]=self["webpackChunkportal_mi"]||[]).push([[443],{4335:function(n,t,a){a.r(t),a.d(t,{default:function(){return f}});var r=a(3396);const u={class:"about"},e=(0,r._)("h1",null,"This is an about page",-1),s=[e];function i(n,t){return(0,r.wg)(),(0,r.iD)("div",u,s)}var c=a(89);const o={},l=(0,c.Z)(o,[["render",i]]);var f=l}}]);
+//# sourceMappingURL=about.bfb0ddc2.js.map
